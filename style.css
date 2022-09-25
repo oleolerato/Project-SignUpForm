@@ -1,0 +1,84 @@
+@font-face{
+  font-family: "Raleway";
+  src: url(/fonts/Raleway/Raleway-Regular.woff), url(/fonts/Raleway/Raleway-Regular.ttf);
+}
+
+@font-face{
+  font-family: "evergrande";
+  src: url(./fonts/Evergrande/evergrande.otf);
+}
+
+*{
+  width: auto;
+  margin: 0;
+  font-family: "Raleway", Sans-Serif;
+  color: white;
+}
+
+body{
+  background-color: black;
+}
+
+#signUpForm{
+  background: rgba(21,68,57,0.62);
+  margin: 10px;
+  display: flex;
+  gap: 20px
+}
+
+#firstSection{
+  position: relative;
+  width: 562px;
+  height: auto;
+}
+
+.bgImage{
+  width: 100%;
+}
+
+.logo {
+  font-family: "evergrande";
+  font-size: 48px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.logo.Bg{
+  width: 100%;
+  
+  position: absolute;
+  bottom: 30px;
+  
+  text-align: center;
+}
+
+.creditText{
+  width: 100%;
+  position: absolute;
+  bottom: 16px;
+  
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+#secondSection{
+  width: 90%;
+}
+
+.introPara{
+  font-size: 18px;
+}
+
+.paraWelcome{
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.compName{
+  color: #A7AFD6;
+}
+
+.paraEnd{
+  font-style: italic;
+}
