@@ -9,7 +9,7 @@
   <div id="signUpForm">
     
   <section id="firstSection">
-    <img class="bgImage" src="./img/bg3.jpg" />
+    <img class="bgImage" src="./img/slim1.jpg" />
     <div class="logo Bg">SA`PPHiRE.</div>
     <div class="creditText">Background: @Normani on Twitter</div>
   </section>
@@ -33,17 +33,17 @@
         <h1>Join Us</h1>
       <div class="controls">
         
-          <div>
+          <div value="firstName">
           <label for="firstName">First Name*</label>
           <input type="text" name="firstName" id="firstName" value="" required/>
         </div>
         
-          <div>
+          <div value="lastName">
           <label for="lastName">Last Name*</label>
           <input type="text" name="lastName" id="lastName" value="" required/>
         </div>
         
-          <div>
+          <div value="email">
           <label for="email">E-Mail*</label>
           <input 
           type="email" 
@@ -59,7 +59,7 @@
           <input type="tel" name="tel" id="tel" value="" />
         </div>
           
-          <div>
+          <div value="password">
             <label for="password">Password*</label>
             <input 
             type="password" 
@@ -67,13 +67,20 @@
             id="password" 
             value="" 
             minlength="8"
-            max-length="16"
+            maxlength="12"
             required=""/>
           </div>
           
-          <div>
+          <div value="confirmPass">
             <label for="confirmPassword">Confirm Password*</label>
-            <input type="password" name="confirmPassword" id="confirmPassword" value="" required=""/>
+            <input 
+            type="password" 
+            name="confirmPassword" 
+            id="confirmPassword" 
+            value="" 
+            minlength="8"
+            maxlength="12"
+            required=""/>
           </div>
           
       </div>  
