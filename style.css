@@ -17,23 +17,29 @@
 
 body{
   background-color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 #signUpForm{
+  margin-top: 15px;
+  width: 95%;
+  height: 100%;
+  
   background: rgba(21,68,57,0.62);
-  margin: 10px;
-  display: flex;
-  gap: 20px
+  display: inline-flex;
+  align-self: center;
 }
 
 #firstSection{
   position: relative;
-  width: 562px;
+  width: 40%;
   height: auto;
 }
 
 .bgImage{
   width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -63,11 +69,12 @@ body{
 }
 
 #secondSection{
-  width: 90%;
+  width: 65%;
 }
 
 .introPara{
   font-size: 18px;
+  padding: 20px;
 }
 
 .paraWelcome{
@@ -75,10 +82,81 @@ body{
   font-weight: bold;
 }
 
-.compName{
+.compName,
+.formContent h1{
   color: #A7AFD6;
 }
 
 .paraEnd{
   font-style: italic;
+}
+
+.formContent{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+  background-color: rgba(50,150,126,0.291);
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.controls{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.controls div{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.controls div input{
+  background-color: rgba(255,255,255,0.345);
+  width: 200px;
+  height: 25px;
+  
+  border: none;
+  border-radius: 5px;
+  appearance: none;
+}
+
+div input:required::after{
+  border: none;
+}
+
+div input:focus{
+  box-shadow: 1px 1px 20px rgba(82,245,164,0.757);
+  outline: none;
+  border: 2px solid rgba(82,245,164,0.757);
+}
+
+.signUp{
+  display: flex;
+  flex-direction: column;
+}
+
+.form button{
+  width: 200px;
+  margin: 20px;
+  background-color: #A7AFD6;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
+  border: none;
+  border-radius: 6px;
+  
+  font-weight: bold;
+}
+
+.form span[value="logIn"]{
+  margin: 20px;
+}
+
+.form span[value="logIn"] span{
+  color: #A7AFD6;
 }
