@@ -8,7 +8,7 @@
 <body>
   <div id="signUpForm">
   <section id="firstSection">
-    <img class="bgImage" src="./img/img3.jpg" />
+    <img class="bgImage" src="./img/bg3.jpg" />
     <div class="logo Bg">SA`PPHiRE.</div>
     <div class="creditText">Background: @Normani on Twitter</div>
   </section>
@@ -27,7 +27,54 @@
   </div>
   
   <div class="form">
-    
+    <form class="signUp" action="" method="post" accept-charset="utf-8">
+      <div class="formContent">
+        <h1>Join Us</h1>
+      <div class="controls">
+        
+        <div>
+          <label for="firstName">First Name*</label>
+          <input type="text" name="firstName" id="firstName" value="" required/>
+        </div>
+        
+        <div>
+          <label for="lastName">Last Name*</label>
+          <input type="text" name="lastName" id="lastName" value="" required/>
+        </div>
+        
+        <div>
+          <label for="email">E-Mail</label>
+          <input type="email" name="email" id="email" value="" />
+        </div>
+        
+        <div>
+          <label for="tel">Phone Number</label>
+          <input type="tel" name="tel" id="tel" value="" />
+        </div>
+          
+          <div>
+            <label for="password">Password</label>
+            <input 
+            type="password" 
+            name="password" 
+            id="password" 
+            value="" 
+            min="8"
+            max-length="16"
+            required=""/>
+          </div>
+          
+          <div>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" value="" />
+          </div>
+      </div>  
+        </div>
+        
+        <button type="submit">Create Account</button>
+        
+        <span value="logIn">Already have an account? <span>Log In</span></span>
+    </form>
   </div>
   
 </section>
